@@ -1,0 +1,375 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Lato', sans-serif; /* Clean, professional font */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9; /* Light background */
+    margin: 0;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #1d3557; /* Dark professional blue */
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #f1faee; /* Light, clean text color */
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #457b9d; /* Hover effect for links */
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    z-index: 1;
+    color: #fff;
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.hero .btn {
+    padding: 0.8rem 2rem;
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-right: 1rem;
+}
+
+.hero .btn:hover {
+    background-color: #d62828;
+}
+
+/* Style for Resume Download Button */
+.resume-btn {
+    background-color: #457b9d; /* Slightly different color for download button */
+}
+
+.resume-btn:hover {
+    background-color: #2d6a8a;
+}
+
+.hero-image {
+    z-index: 1;
+    width: 40%;
+    text-align: right;
+
+}
+
+.hero-image img {
+    width: 80%;
+    border-radius: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Section Styling */
+section {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    margin: 2rem 0;
+}
+
+section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #1d3557; /* Dark professional blue */
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #606060;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* About Section Styling */
+#about {
+    padding: 1rem 1rem;
+    background-color: #f9f9f9; /* Light background */
+    text-align: center; /* Center all text in the section */
+}
+
+#about h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    color: #1d3557; /* Dark professional blue */
+    font-family: 'Montserrat', sans-serif;
+}
+
+#about img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 1.5rem auto; /* Center image */
+    border: 4px solid #457b9d; /* Border for the image */
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #606060; /* Dark gray text for descriptions */
+    margin-bottom: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Center the links */
+    flex-wrap: wrap; /* Wrap links if they overflow */
+}
+
+.social-links a {
+    margin: 0.5rem 1rem; /* Space between links */
+    padding: 0.5rem 1rem;
+    background-color: #1d3557; /* Dark blue background */
+    color: #f1faee; /* Light text color */
+    border-radius: 5px; /* Rounded corners for buttons */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.social-links a:hover {
+    background-color: #457b9d; /* Change color on hover */
+}
+
+/* Skills Section Styling */
+#skills {
+    padding: 4rem 2rem;
+    background-color: #f0f4f8; /* Light gray background for a soft look */
+    color: #333; /* Dark text color */
+    text-align: center; /* Center all text in the section */
+    font-family: 'Lato', sans-serif; /* Clean and modern font for body */
+}
+
+#skills h2 {
+    font-size: 3rem; /* Larger font size for the main heading */
+    margin-bottom: 2rem;
+    color: #1d3557; /* Dark professional blue */
+    font-family: 'Montserrat', sans-serif; /* Stylish font for headings */
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 1px; /* Spacing between letters */
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr); /* Five equal columns */
+    gap: 1.5rem; /* Space between grid items */
+    margin: 0 auto; /* Center the grid */
+    max-width: 1500px; /* Maximum width for the grid */
+}
+
+.skills-category {
+    background-color: #ffffff; /* White background for each skill category */
+    padding: 2rem;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.skills-category:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Shadow depth on hover */
+}
+
+.skills-category h3 {
+    font-size: 2rem; /* Slightly larger font for category headings */
+    color: #457b9d; /* Distinct color for headings */
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize; /* Capitalize for emphasis */
+}
+
+.skills-category ol {
+    list-style-type: decimal; /* Ordered list */
+    padding-left: 20px; /* Indent the list */
+    text-align: left; /* Align text to the left */
+    font-size: 1.2rem; /* Readable font size for skill descriptions */
+    color: #606060; /* Dark gray text for descriptions */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #skills {
+        padding: 2rem 1rem; /* Reduce padding on smaller screens */
+    }
+
+    #skills h2 {
+        font-size: 2.5rem; /* Adjust heading size on smaller screens */
+    }
+
+    .skills-category {
+        padding: 1.5rem; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Projects Section */
+.project {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.project img {
+    width: 80%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 2rem;
+    color: #1d3557;
+    margin-top: 1.5rem;
+}
+
+.project p {
+    font-size: 1.2rem;
+    color: #606060;
+}
+
+/* Achievements Section Styling */
+#achievements {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Dark text color */
+    text-align: center;
+}
+
+#achievements h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    color: #1d3557; /* Dark professional blue */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.achievement {
+    background-color: #ffffff; /* White background for each achievement */
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease;
+}
+
+.achievement:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.achievement h3 {
+    font-size: 1.8rem;
+    color: #457b9d; /* Slightly different shade for headings */
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.achievement p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #606060; /* Dark gray text for descriptions */
+}
+
+/* Contact Section */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #457b9d; /* Focused border color */
+}
+
+form button {
+    padding: 1rem;
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #d62828;
+}
