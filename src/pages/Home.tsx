@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Download, Calendar } from 'lucide-react';
 import { PageTransition } from '../components/PageTransition';
