@@ -10,8 +10,7 @@ import {
 import { PageTransition } from '../components/PageTransition';
 import { SEO } from '../components/SEO';
 
-const APPS_SCRIPT_URL =
-  'https://script.google.com/macros/s/AKfycbxzzGThjFJNwArkjqrVeBq4n0JdeOMgoijSRNjyOtSO6dvHPYuz3xtOp8JrxKk0KYA/exec';
+const APPS_SCRIPT_URL = (import.meta as any).env.VITE_APPS_SCRIPT_URL;
 
 export function Contact() {
   const [formStatus, setFormStatus] = useState<
