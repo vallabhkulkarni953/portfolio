@@ -15,7 +15,7 @@ export function AnimatedCounter({
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, {
     once: true,
-    margin: '-50px'
+    margin: '-10px' // Optimized for highly responsive mobile detection zones
   });
   const [displayValue, setDisplayValue] = useState('0');
   const motionValue = useMotionValue(0);
