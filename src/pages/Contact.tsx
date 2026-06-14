@@ -23,6 +23,8 @@ export function Contact() {
 
   const [website, setWebsite] = useState('');
 
+const APPS_SCRIPT_URL = (import.meta as any).env.VITE_APPS_SCRIPT_URL;
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (website) {
