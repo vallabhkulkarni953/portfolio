@@ -78,7 +78,7 @@ export function Home() {
       {/* Impact Metrics */}
       <section className="py-20 bg-surface border-y border-border">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             <div className="space-y-2">
               <div className="text-4xl md:text-5xl font-bold text-primary tracking-tight font-mono">
                 <AnimatedCounter value={25} suffix="+" />
