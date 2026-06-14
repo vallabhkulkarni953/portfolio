@@ -11,7 +11,7 @@ import { PageTransition } from '../components/PageTransition';
 import { SEO } from '../components/SEO';
 
 const APPS_SCRIPT_URL =
-  'https://script.google.com/macros/s/AKfycbyBB6FrHRl7i2n9h1bCjtKlyv-d543KZylgbZ80cdQzmr3wLXUaPVqG_JMROVZoJj4/exec';
+  'https://script.google.com/macros/s/AKfycbxzzGThjFJNwArkjqrVeBq4n0JdeOMgoijSRNjyOtSO6dvHPYuz3xtOp8JrxKk0KYA/exec';
 
 export function Contact() {
   const [formStatus, setFormStatus] = useState<
