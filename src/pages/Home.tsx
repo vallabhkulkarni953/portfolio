@@ -3,6 +3,7 @@ import { ArrowRight, Download, Calendar } from 'lucide-react';
 import { PageTransition } from '../components/PageTransition';
 import { AnimatedCounter } from '../components/AnimatedCounter';
 import { SEO } from '../components/SEO';
+import profileImage from '../assets/vallabh-kulkarni.jfif';
 export function Home() {
   const personSchema = {
     '@context': 'https://schema.org',
@@ -62,11 +63,13 @@ export function Home() {
           </div>
 
           {/* Placeholder Headshot */}
-          <div className="w-64 h-64 md:w-80 md:h-80 shrink-0 relative">
-            <div className="absolute inset-0 bg-surface rounded-full border border-border shadow-sm flex items-center justify-center overflow-hidden group">
-              <span className="text-6xl font-mono font-light text-border tracking-tighter group-hover:scale-105 transition-transform duration-500 group-hover:text-accent">
-                &lt;VK/&gt;
-              </span>
+          <div className="w-72 md:w-96 shrink-0">
+            <div className="relative overflow-hidden rounded-3xl border border-border bg-surface">
+              <img
+                src={profileImage}
+                alt="Vallabh Kulkarni"
+                className="w-full h-auto object-cover"
+              />
             </div>
           </div>
         </div>
