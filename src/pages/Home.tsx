@@ -4,6 +4,7 @@ import { PageTransition } from '../components/PageTransition';
 import { AnimatedCounter } from '../components/AnimatedCounter';
 import { SEO } from '../components/SEO';
 import profileImage from '../assets/vallabh-kulkarni.jfif';
+
 export function Home() {
   const personSchema = {
     '@context': 'https://schema.org',
@@ -13,6 +14,7 @@ export function Home() {
     url: 'https://vallabhkulkarni.com',
     sameAs: ['https://linkedin.com', 'https://github.com']
   };
+
   return (
     <PageTransition>
       <SEO schema={personSchema} />
@@ -44,25 +46,22 @@ export function Home() {
               <Link
                 to="/work"
                 className="inline-flex items-center justify-center gap-2 bg-primary text-background px-6 py-3 rounded-md font-medium hover:bg-primary/90 transition-colors w-full sm:w-auto">
-                
                 View Projects <ArrowRight size={16} />
               </Link>
               <Link
                 to="/resume"
                 className="inline-flex items-center justify-center gap-2 bg-surface border border-border text-primary px-6 py-3 rounded-md font-medium hover:bg-border transition-colors w-full sm:w-auto">
-                
                 Read Resume <Download size={16} />
               </Link>
               <Link
                 to="/contact"
                 className="inline-flex items-center justify-center gap-2 text-secondary px-6 py-3 font-medium hover:text-accent transition-colors w-full sm:w-auto">
-                
                 Get in Touch <Calendar size={16} />
               </Link>
             </div>
           </div>
 
-          {/* Placeholder Headshot */}
+          {/* Headshot */}
           <div className="w-72 md:w-96 shrink-0">
             <div className="relative overflow-hidden rounded-3xl border border-border bg-surface">
               <img
@@ -78,7 +77,8 @@ export function Home() {
       {/* Impact Metrics */}
       <section className="py-20 bg-surface border-y border-border">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12"></div>  
+          {/* ✅ MOBILE RE-SPACING APPLIED HERE */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             <div className="space-y-2">
               <div className="text-4xl md:text-5xl font-bold text-primary tracking-tight font-mono">
                 <AnimatedCounter value={25} suffix="+" />
@@ -156,33 +156,32 @@ export function Home() {
 
         <div className="grid md:grid-cols-2 gap-6">
           {[
-          {
-            title: 'Enterprise Automation',
-            desc: 'Building scalable integrations connecting critical business systems.'
-          },
-          {
-            title: 'AI Engineering',
-            desc: 'Creating intelligent workflows powered by modern AI technologies.'
-          },
-          {
-            title: 'Problem Solving',
-            desc: 'Identifying bottlenecks and delivering measurable improvements.'
-          },
-          {
-            title: 'System Design',
-            desc: 'Architecting robust, secure, and scalable software solutions.'
-          }].
-          map((card, i) =>
-          <div
-            key={i}
-            className="p-8 rounded-xl border border-border bg-surface hover:border-accent/50 transition-colors group">
-            
+            {
+              title: 'Enterprise Automation',
+              desc: 'Building scalable integrations connecting critical business systems.'
+            },
+            {
+              title: 'AI Engineering',
+              desc: 'Creating intelligent workflows powered by modern AI technologies.'
+            },
+            {
+              title: 'Problem Solving',
+              desc: 'Identifying bottlenecks and delivering measurable improvements.'
+            },
+            {
+              title: 'System Design',
+              desc: 'Architecting robust, secure, and scalable software solutions.'
+            }
+          ].map((card, i) => (
+            <div
+              key={i}
+              className="p-8 rounded-xl border border-border bg-surface hover:border-accent/50 transition-colors group">
               <h3 className="text-xl font-semibold mb-3 text-primary group-hover:text-accent transition-colors">
                 {card.title}
               </h3>
               <p className="text-secondary leading-relaxed">{card.desc}</p>
             </div>
-          )}
+          ))}
         </div>
       </section>
 
@@ -199,11 +198,10 @@ export function Home() {
           <Link
             to="/work"
             className="inline-flex items-center justify-center gap-2 bg-primary text-background px-8 py-4 rounded-md font-mono text-sm font-medium hover:bg-primary/90 transition-colors">
-            
             Explore Projects <ArrowRight size={16} />
           </Link>
         </div>
       </section>
-    </PageTransition>);
-
+    </PageTransition>
+  );
 }
