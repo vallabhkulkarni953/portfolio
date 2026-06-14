@@ -27,44 +27,45 @@ export function Contact() {
 
   const [website, setWebsite] = useState('');
 
-const handleSubmit = async (
-  e: React.FormEvent<HTMLFormElement>
-) => {
-  e.preventDefault();
-  if (website) {
-  return;
-}
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (website) {
+      return;
+    }
 
-  setFormStatus('submitting');
+    setFormStatus('submitting');
 
-  try {
-    await fetch(APPS_SCRIPT_URL, {
-      method: 'POST',
-      mode: 'no-cors',
-      body: JSON.stringify({
-        ...formData,
-        source: 'Portfolio Website',
-      }),
-    });
+    try {
+      await fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'text/plain',
+        },
+        body: JSON.stringify({
+          ...formData,
+          source: 'Portfolio Website',
+        }),
+      });
 
-    setFormStatus('success');
+      setFormStatus('success');
 
-    setFormData({
-      name: '',
-      email: '',
-      company: '',
-      message: '',
-    });
-  } catch (error) {
-    console.error(error);
+      setFormData({
+        name: '',
+        email: '',
+        company: '',
+        message: '',
+      });
+    } catch (error) {
+      console.error(error);
 
-    setFormStatus('idle');
+      setFormStatus('idle');
 
-    alert(
-      'Something went wrong. Please contact me directly at vallabhkul953@gmail.com'
-    );
-  }
-};
+      alert(
+        'Something went wrong. Please contact me directly at vallabhkul953@gmail.com'
+      );
+    }
+  };
 
   const faqSchema = {
     '@context': 'https://schema.org',
@@ -236,20 +237,20 @@ const handleSubmit = async (
                 className="space-y-6"
               >
                 <div className="hidden">
-  <label htmlFor="website">
-    Website
-  </label>
+                  <label htmlFor="website">
+                    Website
+                  </label>
+                  <input
+                    type="text"
+                    id="website"
+                    value={website}
+                    onChange={(e) =>
+                      setWebsite(e.target.value)
+                    }
+                    autoComplete="off"
+                  />
+                </div>
 
-  <input
-    type="text"
-    id="website"
-    value={website}
-    onChange={(e) =>
-      setWebsite(e.target.value)
-    }
-    autoComplete="off"
-  />
-</div>
                 <div>
                   <label
                     htmlFor="name"
@@ -257,7 +258,6 @@ const handleSubmit = async (
                   >
                     Name
                   </label>
-
                   <input
                     required
                     type="text"
@@ -281,7 +281,6 @@ const handleSubmit = async (
                   >
                     Email
                   </label>
-
                   <input
                     required
                     type="email"
@@ -305,7 +304,6 @@ const handleSubmit = async (
                   >
                     Company (Optional)
                   </label>
-
                   <input
                     type="text"
                     id="company"
@@ -328,7 +326,6 @@ const handleSubmit = async (
                   >
                     Message
                   </label>
-
                   <textarea
                     required
                     id="message"
@@ -351,8 +348,8 @@ const handleSubmit = async (
                   className="w-full py-4 bg-primary text-background rounded-lg font-medium hover:bg-primary/90 transition-colors disabled:opacity-70"
                 >
                   {formStatus === 'submitting'
-  ? 'Sending Message...'
-  : 'Send Message'}
+                    ? 'Sending Message...'
+                    : 'Send Message'}
                 </button>
               </form>
             )}
@@ -367,7 +364,6 @@ const handleSubmit = async (
             <h2 className="text-3xl font-bold text-primary mb-4">
               Frequently Asked Questions
             </h2>
-
             <p className="text-secondary">
               Quick answers about my background,
               experience, and expertise.
@@ -382,13 +378,11 @@ const handleSubmit = async (
               >
                 <summary className="flex items-center justify-between p-6 cursor-pointer font-medium text-primary">
                   {faq.q}
-
                   <ChevronDown
                     size={20}
                     className="group-open:rotate-180 transition-transform"
                   />
                 </summary>
-
                 <div className="px-6 pb-6 border-t border-border pt-4 text-secondary">
                   {faq.a}
                 </div>
