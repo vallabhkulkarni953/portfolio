@@ -9,6 +9,10 @@ import {
 
 import { PageTransition } from '../components/PageTransition';
 import { SEO } from '../components/SEO';
+
+// ✅ FIXED: Declared globally outside the component function block
+const APPS_SCRIPT_URL = (import.meta as any).env.VITE_APPS_SCRIPT_URL;
+
 export function Contact() {
   const [formStatus, setFormStatus] = useState<
     'idle' | 'submitting' | 'success'
