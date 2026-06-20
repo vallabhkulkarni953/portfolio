@@ -1,4 +1,4 @@
-import React, { useEffect, createElement } from 'react';
+import { useEffect } from 'react';
 export function SEO({ schema }: {schema: any;}) {
   useEffect(() => {
     const script = document.createElement('script');

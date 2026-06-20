@@ -1,6 +1,5 @@
 "use client";
 
-import React from 'react';
 import { Printer, Download, ExternalLink } from 'lucide-react';
 import { PageTransition } from '@/src/components/PageTransition';
 
