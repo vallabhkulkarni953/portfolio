@@ -73,7 +73,7 @@ export default function Home() {
           <div className="w-72 md:w-96 shrink-0">
             <div className="relative overflow-hidden rounded-3xl border border-border bg-surface aspect-square">
               <Image
-                src="/assets/vallabh-kulkarni.jfif"
+                src="/assets/vallabh-kulkarni.jpg"
                 alt="Vallabh Kulkarni"
                 fill
                 priority
