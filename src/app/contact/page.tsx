@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from 'react';
 import {
   Mail,
@@ -7,13 +9,12 @@ import {
   CheckCircle2,
 } from 'lucide-react';
 
-import { PageTransition } from '../components/PageTransition';
-import { SEO } from '../components/SEO';
+import { PageTransition } from '@/src/components/PageTransition';
 
-// ✅ FIXED: Declared globally outside the component function block
-const APPS_SCRIPT_URL = (import.meta as any).env.VITE_APPS_SCRIPT_URL;
+// ✅ Next.js standard for accessing public runtime client variables
+const APPS_SCRIPT_URL = process.env.NEXT_PUBLIC_APPS_SCRIPT_URL;
 
-export function Contact() {
+export default function Contact() {
   const [formStatus, setFormStatus] = useState<
     'idle' | 'submitting' | 'success'
   >('idle');
@@ -36,6 +37,10 @@ export function Contact() {
     setFormStatus('submitting');
 
     try {
+      if (!APPS_SCRIPT_URL) {
+        throw new Error("Missing NEXT_PUBLIC_APPS_SCRIPT_URL environment variable.");
+      }
+
       await fetch(APPS_SCRIPT_URL, {
         method: 'POST',
         mode: 'no-cors',
@@ -123,7 +128,11 @@ export function Contact() {
 
   return (
     <PageTransition>
-      <SEO schema={faqSchema} />
+      {/* Native JSON-LD Structured Data Injection for Search Crawlers */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
       <div className="max-w-6xl mx-auto px-6 py-24">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">

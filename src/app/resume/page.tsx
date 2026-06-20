@@ -1,8 +1,10 @@
+"use client";
+
 import React from 'react';
 import { Printer, Download, ExternalLink } from 'lucide-react';
-import { PageTransition } from '../components/PageTransition';
+import { PageTransition } from '@/src/components/PageTransition';
 
-export function Resume() {
+export default function Resume() {
   const handlePrint = () => {
     window.print();
   };
@@ -41,7 +43,7 @@ export function Resume() {
           </div>
         </div>
 
-        {/* Resume */}
+        {/* Resume Content Sheet */}
         <div className="bg-surface p-8 md:p-12 border border-border shadow-sm rounded-xl print:bg-white print:text-black print:border-none print:shadow-none print:p-0">
           
           {/* Header */}

@@ -1,11 +1,12 @@
-import { Link } from 'react-router-dom';
+"use client";
+
+import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, Download, Calendar } from 'lucide-react';
 import { PageTransition } from '../components/PageTransition';
 import { AnimatedCounter } from '../components/AnimatedCounter';
-import { SEO } from '../components/SEO';
-import profileImage from '../assets/vallabh-kulkarni.jfif';
 
-export function Home() {
+export default function Home() {
   const personSchema = {
     '@context': 'https://schema.org',
     '@type': 'Person',
@@ -17,7 +18,11 @@ export function Home() {
 
   return (
     <PageTransition>
-      <SEO schema={personSchema} />
+      {/* Native JSON-LD Structured Data Injection for Search Crawlers */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
 
       {/* Hero Section */}
       <section className="pt-24 pb-20 md:pt-32 md:pb-32 px-6 max-w-6xl mx-auto">
@@ -44,30 +49,36 @@ export function Home() {
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-4 font-mono text-sm">
               <Link
-                to="/work"
-                className="inline-flex items-center justify-center gap-2 bg-primary text-background px-6 py-3 rounded-md font-medium hover:bg-primary/90 transition-colors w-full sm:w-auto">
+                href="/work"
+                className="inline-flex items-center justify-center gap-2 bg-primary text-background px-6 py-3 rounded-md font-medium hover:bg-primary/90 transition-colors w-full sm:w-auto"
+              >
                 View Projects <ArrowRight size={16} />
               </Link>
               <Link
-                to="/resume"
-                className="inline-flex items-center justify-center gap-2 bg-surface border border-border text-primary px-6 py-3 rounded-md font-medium hover:bg-border transition-colors w-full sm:w-auto">
+                href="/resume"
+                className="inline-flex items-center justify-center gap-2 bg-surface border border-border text-primary px-6 py-3 rounded-md font-medium hover:bg-border transition-colors w-full sm:w-auto"
+              >
                 Read Resume <Download size={16} />
               </Link>
               <Link
-                to="/contact"
-                className="inline-flex items-center justify-center gap-2 text-secondary px-6 py-3 font-medium hover:text-accent transition-colors w-full sm:w-auto">
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2 text-secondary px-6 py-3 font-medium hover:text-accent transition-colors w-full sm:w-auto"
+              >
                 Get in Touch <Calendar size={16} />
               </Link>
             </div>
           </div>
 
-          {/* Headshot */}
+          {/* Headshot utilizing Next.js Layout-Shift Optimization */}
           <div className="w-72 md:w-96 shrink-0">
-            <div className="relative overflow-hidden rounded-3xl border border-border bg-surface">
-              <img
-                src={profileImage}
+            <div className="relative overflow-hidden rounded-3xl border border-border bg-surface aspect-square">
+              <Image
+                src="/assets/vallabh-kulkarni.jfif"
                 alt="Vallabh Kulkarni"
-                className="w-full h-auto object-cover"
+                fill
+                priority
+                className="object-cover"
+                sizes="(max-w-768px) 288px, 384px"
               />
             </div>
           </div>
@@ -77,7 +88,6 @@ export function Home() {
       {/* Impact Metrics */}
       <section className="py-20 bg-surface border-y border-border">
         <div className="max-w-6xl mx-auto px-6">
-          {/* ✅ MOBILE RE-SPACING APPLIED HERE */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             <div className="space-y-2">
               <div className="text-4xl md:text-5xl font-bold text-primary tracking-tight font-mono">
@@ -175,7 +185,8 @@ export function Home() {
           ].map((card, i) => (
             <div
               key={i}
-              className="p-8 rounded-xl border border-border bg-surface hover:border-accent/50 transition-colors group">
+              className="p-8 rounded-xl border border-border bg-surface hover:border-accent/50 transition-colors group"
+            >
               <h3 className="text-xl font-semibold mb-3 text-primary group-hover:text-accent transition-colors">
                 {card.title}
               </h3>
@@ -196,8 +207,9 @@ export function Home() {
             complex engineering challenges.
           </p>
           <Link
-            to="/work"
-            className="inline-flex items-center justify-center gap-2 bg-primary text-background px-8 py-4 rounded-md font-mono text-sm font-medium hover:bg-primary/90 transition-colors">
+            href="/work"
+            className="inline-flex items-center justify-center gap-2 bg-primary text-background px-8 py-4 rounded-md font-mono text-sm font-medium hover:bg-primary/90 transition-colors"
+          >
             Explore Projects <ArrowRight size={16} />
           </Link>
         </div>
