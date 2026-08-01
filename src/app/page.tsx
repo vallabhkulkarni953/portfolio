@@ -11,7 +11,7 @@ export default function Home() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Vallabh Kulkarni',
-    jobTitle: 'Associate Software Engineer',
+    jobTitle: 'Computer Engineer and Problem Solver',
     url: 'https://vallabhkulkarni.com',
     sameAs: ['https://linkedin.com', 'https://github.com']
   };
