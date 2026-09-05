@@ -17,7 +17,6 @@ export default function Resume() {
   };
 
   const handleDownload = () => {
-    // Directly downloads the PDF from public folder
     const link = document.createElement("a");
     link.href = "/Vallabh_Kulkarni_Resume_18_07_2026.pdf";
     link.download = "Vallabh_Kulkarni_Resume.pdf";
@@ -57,17 +56,17 @@ export default function Resume() {
           {/* Header */}
           <header className="border-b border-border pb-6 mb-6">
             <h1 className="text-3xl font-bold text-primary mb-2">
-              Vallabh Kulkarni[cite: 1]
+              Vallabh Kulkarni
             </h1>
 
             <p className="text-lg text-secondary mb-4">
-              Software Engineer | Backend | Enterprise Integrations[cite: 1]
+              Software Engineer | Backend | Enterprise Integrations
             </p>
 
             <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-secondary">
               <span className="flex items-center gap-1 text-primary">
                 <Phone size={14} />
-                +91 9022984857[cite: 1]
+                +91 9022984857
               </span>
 
               <a
@@ -75,7 +74,7 @@ export default function Resume() {
                 className="flex items-center gap-1 hover:text-primary"
               >
                 <Mail size={14} />
-                vallabhkul953@gmail.com[cite: 1]
+                vallabhkul953@gmail.com
               </a>
 
               <a
@@ -85,7 +84,7 @@ export default function Resume() {
                 className="flex items-center gap-1 hover:text-primary"
               >
                 <Linkedin size={14} />
-                vallabhkul953[cite: 1]
+                vallabhkul953
               </a>
 
               <a
@@ -95,7 +94,7 @@ export default function Resume() {
                 className="flex items-center gap-1 hover:text-primary"
               >
                 <Github size={14} />
-                vallabhkulkarni953[cite: 1]
+                vallabhkulkarni953
               </a>
 
               <a
@@ -111,7 +110,7 @@ export default function Resume() {
           {/* Summary */}
           <section className="mb-8">
             <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-3">
-              Professional Summary[cite: 1]
+              Professional Summary
             </h2>
 
             <p className="text-sm leading-relaxed text-primary">
@@ -119,46 +118,45 @@ export default function Resume() {
               automation, backend integrations, and scalable API-driven systems.
               Delivered production-ready software using Python, Workato,
               Salesforce, and cloud technologies to improve reliability,
-              performance, and operational efficiency[cite: 1].
+              performance, and operational efficiency.
             </p>
           </section>
 
           {/* Skills */}
           <section className="mb-8">
             <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-3">
-              Technical Skills[cite: 1]
+              Technical Skills
             </h2>
 
             <div className="text-sm text-primary space-y-2">
               <p>
-                <span className="font-bold">Languages:</span> Python, SQL[cite:
-                1]
+                <span className="font-bold">Languages:</span> Python, SQL
               </p>
 
               <p>
                 <span className="font-bold">Backend & Integration:</span> REST
                 APIs, SDK Development, Enterprise Integrations, Workflow
-                Automation[cite: 1]
+                Automation
               </p>
 
               <p>
                 <span className="font-bold">Cloud & Platforms:</span> AWS,
-                Salesforce, Workato[cite: 1]
+                Salesforce, Workato
               </p>
 
               <p>
                 <span className="font-bold">Databases:</span> MySQL, MongoDB,
-                BigQuery[cite: 1]
+                BigQuery
               </p>
 
               <p>
                 <span className="font-bold">AI Engineering:</span> Gemini API,
-                MCP, Prompt Engineering[cite: 1]
+                MCP, Prompt Engineering
               </p>
 
               <p>
                 <span className="font-bold">Developer Tools:</span> Git,
-                Postman, VS Code[cite: 1]
+                Postman, VS Code
               </p>
             </div>
           </section>
@@ -166,67 +164,61 @@ export default function Resume() {
           {/* Experience */}
           <section className="mb-8">
             <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-4">
-              Professional Experience[cite: 1]
+              Professional Experience
             </h2>
 
             {/* OneSolve */}
             <div className="mb-6">
               <div className="flex justify-between items-baseline mb-1">
                 <h3 className="font-bold text-primary text-base">OneSolve</h3>
-                [cite: 1]
                 <span className="text-xs font-mono text-secondary">
                   Remote (California, USA)
                 </span>
-                [cite: 1]
               </div>
 
               <div className="flex justify-between items-baseline mb-1">
                 <p className="text-sm font-medium italic text-secondary">
-                  Associate Software Engineer[cite: 1]
+                  Associate Software Engineer
                 </p>
                 <span className="text-xs font-mono text-secondary">
                   July 2025 – Present
                 </span>
-                [cite: 1]
               </div>
 
               <div className="flex justify-between items-baseline mb-3">
                 <p className="text-sm font-medium italic text-secondary">
-                  Software Engineer Intern[cite: 1]
+                  Software Engineer Intern
                 </p>
                 <span className="text-xs font-mono text-secondary">
                   Feb 2025 – June 2025
                 </span>
-                [cite: 1]
               </div>
 
               <ul className="list-disc ml-4 text-sm space-y-1.5 text-primary">
                 <li>
                   Developed enterprise automation solutions, backend
                   integrations, and scalable workflow systems using Python,
-                  Workato, Salesforce, AWS, SQL, and REST APIs[cite: 1].
+                  Workato, Salesforce, AWS, SQL, and REST APIs.
                 </li>
                 <li>
                   Built and enhanced 5+ enterprise automation workflows,
                   maintaining 25+ production recipes while improving system
-                  reliability, scalability, and operational efficiency[cite: 1].
+                  reliability, scalability, and operational efficiency.
                 </li>
                 <li>
                   Designed, developed, and maintained 5 SDK connectors (2 new, 3
                   enhanced) to standardize enterprise integrations and simplify
-                  reusable API interactions across client solutions[cite: 1].
+                  reusable API interactions across client solutions.
                 </li>
                 <li>
                   Delivered 6 major production releases across enterprise
                   automation and integration platforms, managing implementation,
-                  testing, deployment, production support, and issue
-                  resolution[cite: 1].
+                  testing, deployment, production support, and issue resolution.
                 </li>
                 <li>
                   Partnered with cross-functional teams and enterprise clients,
                   including Fastly and Dandy, to deliver production-ready
-                  integration solutions across CRM, ERP, and cloud
-                  platforms[cite: 1].
+                  integration solutions across CRM, ERP, and cloud platforms.
                 </li>
               </ul>
             </div>
@@ -237,28 +229,25 @@ export default function Resume() {
                 <h3 className="font-bold text-primary text-base">
                   MediMaze Solutions Pvt. Ltd.
                 </h3>
-                [cite: 1]
                 <span className="text-xs font-mono text-secondary">
                   Chinchwad, Pune
                 </span>
-                [cite: 1]
               </div>
 
               <div className="flex justify-between items-baseline mb-3">
                 <p className="text-sm font-medium italic text-secondary">
-                  Data Science Intern[cite: 1]
+                  Data Science Intern
                 </p>
                 <span className="text-xs font-mono text-secondary">
                   May 2024 – July 2024
                 </span>
-                [cite: 1]
               </div>
 
               <ul className="list-disc ml-4 text-sm space-y-1.5 text-primary">
                 <li>
                   Developed Python-based machine learning solutions for medical
                   imaging and healthcare datasets, working with DICOM images and
-                  clinical records to support diagnostic workflows[cite: 1].
+                  clinical records to support diagnostic workflows.
                 </li>
               </ul>
             </div>
@@ -267,49 +256,49 @@ export default function Resume() {
           {/* Enterprise Projects */}
           <section className="mb-8">
             <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-4">
-              Enterprise Projects[cite: 1]
+              Enterprise Projects
             </h2>
 
             {/* Dandy: SendBlue */}
             <div className="mb-6">
               <div className="flex justify-between items-baseline mb-1">
                 <h3 className="font-bold text-primary">
-                  Dandy: SendBlue SMS Training Confirmation Platform[cite: 1]
+                  Dandy: SendBlue SMS Training Confirmation Platform
                 </h3>
               </div>
               <p className="text-xs font-mono text-secondary mb-2">
-                Workato, Salesforce, Sendblue, Gemini[cite: 1]
+                Workato, Salesforce, Sendblue, Gemini
               </p>
               <p className="text-sm text-secondary mb-2">
                 Owned the end-to-end design, development, testing, deployment,
                 and production rollout of an automated SMS training confirmation
                 platform for Dandy, enabling intelligent outreach, reminders,
-                rescheduling, and AI-powered response processing[cite: 1].
+                rescheduling, and AI-powered response processing.
               </p>
               <ul className="list-disc ml-4 text-sm space-y-1 text-primary">
                 <li>
                   Designed and developed a custom SendBlue SDK Connector with
                   10+ reusable REST API actions, webhook triggers, and resilient
                   retry mechanisms for rate-limited (429) and transient
-                  failures, enabling scalable SMS automation[cite: 1].
+                  failures, enabling scalable SMS automation.
                 </li>
                 <li>
                   Engineered a timezone-aware scheduling engine that guaranteed
                   zero missed business-hour message deliveries by buffering and
                   orchestrating outbound communication according to each
-                  recipient's local business hours[cite: 1].
+                  recipient's local business hours.
                 </li>
                 <li>
                   Integrated the Gemini API to automatically classify inbound
                   SMS responses into Confirmed, Reschedule, and Unconfirmed
                   workflows, eliminating manual response triage and improving
-                  operational efficiency[cite: 1].
+                  operational efficiency.
                 </li>
                 <li>
                   Executed a zero-data-loss migration from the legacy SendBlue
                   workflow into Workato Version 2, designing deployment
                   safeguards, rollback planning, validation strategies, and
-                  post-production monitoring[cite: 1].
+                  post-production monitoring.
                 </li>
               </ul>
             </div>
@@ -318,37 +307,35 @@ export default function Resume() {
             <div className="mb-6">
               <div className="flex justify-between items-baseline mb-1">
                 <h3 className="font-bold text-primary">
-                  Dandy: Forma AI Compensation Data Platform[cite: 1]
+                  Dandy: Forma AI Compensation Data Platform
                 </h3>
               </div>
               <p className="text-xs font-mono text-secondary mb-2">
-                Workato, Salesforce, UKG, BigQuery, AWS[cite: 1]
+                Workato, Salesforce, UKG, BigQuery, AWS
               </p>
               <p className="text-sm text-secondary mb-2">
                 Developed a scalable enterprise compensation data pipeline
                 integrating Salesforce, UKG, Looker, Hex, Amazon S3, and
-                BigQuery to support secure analytics and historical
-                reporting[cite: 1].
+                BigQuery to support secure analytics and historical reporting.
               </p>
               <ul className="list-disc ml-4 text-sm space-y-1 text-primary">
                 <li>
                   Designed secure cross-account AWS infrastructure using IAM
                   roles, inline policies, and Amazon S3 for enterprise-grade
-                  data ingestion[cite: 1].
+                  data ingestion.
                 </li>
                 <li>
                   Reduced UKG pipeline execution time by 87% through SQL query
-                  optimization and self-join restructuring[cite: 1].
+                  optimization and self-join restructuring.
                 </li>
                 <li>
                   Eliminated 90-minute workflow timeouts by implementing
-                  asynchronous child functions across five Salesforce
-                  objects[cite: 1].
+                  asynchronous child functions across five Salesforce objects.
                 </li>
                 <li>
                   Built BigQuery-powered historical snapshot workflows
                   supporting dynamic reporting across quarterly compensation
-                  periods[cite: 1].
+                  periods.
                 </li>
               </ul>
             </div>
@@ -357,33 +344,32 @@ export default function Resume() {
             <div>
               <div className="flex justify-between items-baseline mb-1">
                 <h3 className="font-bold text-primary">
-                  Fastly: Order-to-Cash (O2C) Optimization[cite: 1]
+                  Fastly: Order-to-Cash (O2C) Optimization
                 </h3>
               </div>
               <p className="text-xs font-mono text-secondary mb-2">
-                Workato, LogiSense, NetSuite, SFDC[cite: 1]
+                Workato, LogiSense, NetSuite, SFDC
               </p>
               <p className="text-sm text-secondary mb-2">
                 Enhanced Fastly's Order-to-Cash integration platform by
                 modernizing enterprise integrations across Salesforce,
                 LogiSense, and NetSuite through reusable SDK development and
-                workflow optimization[cite: 1].
+                workflow optimization.
               </p>
               <ul className="list-disc ml-4 text-sm space-y-1 text-primary">
                 <li>
                   Built a reusable LogiSense SDK Connector with 20+ REST API
-                  actions, eliminating 25+ monthly hours of API
-                  maintenance[cite: 1].
+                  actions, eliminating 25+ monthly hours of API maintenance.
                 </li>
                 <li>
                   Improved order processing performance by 30% through modular
                   connector architecture replacing direct HTTP integrations
-                  across 40+ production workflows[cite: 1].
+                  across 40+ production workflows.
                 </li>
                 <li>
                   Resolved 10+ production-critical integration defects spanning
                   Salesforce, LogiSense, and NetSuite through systematic
-                  root-cause analysis and production debugging[cite: 1].
+                  root-cause analysis and production debugging.
                 </li>
               </ul>
             </div>
@@ -392,7 +378,7 @@ export default function Resume() {
           {/* Technical Achievements */}
           <section className="mb-8">
             <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-3">
-              Technical Achievements[cite: 1]
+              Technical Achievements
             </h2>
 
             <ul className="list-disc ml-4 text-sm space-y-1 text-primary">
@@ -400,15 +386,15 @@ export default function Resume() {
                 Published research in the International Research Journal of
                 Engineering and Technology (IRJET) on Big Data Privacy and
                 Security, exploring secure data management and
-                privacy-preserving techniques for large-scale systems[cite: 1].
+                privacy-preserving techniques for large-scale systems.
               </li>
               <li>
                 Solved 250+ algorithmic problems on LeetCode, strengthening
-                expertise in Data Structures and Algorithms[cite: 1].
+                expertise in Data Structures and Algorithms.
               </li>
               <li>
                 Earned 4★ in Python and 5★ in C++ (Object-Oriented Programming)
-                on HackerRank[cite: 1].
+                on HackerRank.
               </li>
             </ul>
           </section>
@@ -416,24 +402,23 @@ export default function Resume() {
           {/* Education */}
           <section className="mb-8">
             <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-3">
-              Education[cite: 1]
+              Education
             </h2>
 
             <div className="text-sm text-primary">
               <div className="flex justify-between items-baseline mb-1">
                 <p className="font-bold">
-                  Pimpri Chinchwad College of Engineering, Pune (PCCOE)[cite: 1]
+                  Pimpri Chinchwad College of Engineering, Pune (PCCOE)
                 </p>
                 <span className="text-xs font-mono text-secondary">
                   Dec 2021 – July 2025
                 </span>
-                [cite: 1]
               </div>
               <p className="text-secondary">
-                Bachelor of Technology in Computer Engineering[cite: 1]
+                Bachelor of Technology in Computer Engineering
               </p>
               <p className="font-mono text-xs text-secondary mt-1">
-                CGPA: 9.05 / 10[cite: 1]
+                CGPA: 9.05 / 10
               </p>
             </div>
           </section>
@@ -441,25 +426,24 @@ export default function Resume() {
           {/* Certifications */}
           <section>
             <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-3">
-              Certifications[cite: 1]
+              Certifications
             </h2>
 
             <ul className="list-disc ml-4 text-sm space-y-1 text-primary">
               <li>
                 Technical Developer, Automation Pro I, Automation Pro II, and
-                Automation Pro III by Workato[cite: 1]
+                Automation Pro III by Workato
               </li>
               <li>
-                Google Cloud Career Launchpad Generative AI Track by
-                Google[cite: 1]
+                Google Cloud Career Launchpad Generative AI Track by Google
               </li>
               <li>
                 Career Essentials in Software Development by Microsoft and
-                LinkedIn[cite: 1]
+                LinkedIn
               </li>
               <li>
                 The Complete Python Bootcamp from Zero to Hero in Python on
-                Udemy by Jose Portilla[cite: 1]
+                Udemy by Jose Portilla
               </li>
             </ul>
           </section>
