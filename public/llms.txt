@@ -1,0 +1,20 @@
+# Vallabh Kulkarni
+
+> Software Engineer specializing in Enterprise Automation, AI Engineering, and scalable data pipelines.
+
+## About
+Vallabh Kulkarni develops intelligent systems, workflow automations, and backend solutions. He has experience working with enterprise integrations, machine learning models, and modern web applications.
+
+## Core Technical Stack
+- **Languages**: Python, TypeScript, JavaScript, SQL, Ruby
+- **Automation & Integrations**: Workato, Salesforce, GCP, REST APIs, Webhooks
+- **Frameworks & Frontend**: Next.js, React, Tailwind CSS, Framer Motion
+- **AI & Data**: Google Cloud Vertex AI / Gemini API, Deep Learning, BigQuery, PostgreSQL
+
+## Primary Links
+- [Website](https://vallabhkulkarni.com): Homepage and overview of recent projects
+- [About](https://vallabhkulkarni.com/about): Career background, education, and detailed technical focus
+- [Work](https://vallabhkulkarni.com/work): Enterprise automation case studies and technical projects
+- [Contact](https://vallabhkulkarni.com/contact): Direct outreach, collaboration inquiries, and professional profiles
+- [GitHub](https://github.com/vallabhkul953): Open source repositories and personal code
+- [LinkedIn](https://linkedin.com/in/vallabhkul953): Professional background and enterprise history

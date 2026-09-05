@@ -1,5 +1,22 @@
+# Allow all standard crawlers
 User-agent: *
 Allow: /
 
-# Host
-Host: https://vallabhkulkarni.com
+# Allow AI crawlers for AEO/GEO indexing
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemap Reference
+Sitemap: https://vallabhkulkarni.com/sitemap.xml
