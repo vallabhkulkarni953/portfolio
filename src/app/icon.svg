@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2DD4BF" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Dark Rounded Canvas -->
+  <rect width="512" height="512" rx="112" fill="#08090D" stroke="#1E2230" stroke-width="8" />
+
+  <!-- Outer Brackets -->
+  <path d="M 130 140 L 90 140 L 90 372 L 130 372" fill="none" stroke="url(#gradient)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" />
+  <path d="M 382 140 L 422 140 L 422 372 L 382 372" fill="none" stroke="url(#gradient)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" />
+
+  <!-- V Letter -->
+  <path d="M 150 200 L 210 312 L 270 200" fill="none" stroke="#2DD4BF" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" />
+  
+  <!-- K Letter -->
+  <path d="M 295 200 L 295 312 M 360 200 L 300 256 L 365 312" fill="none" stroke="#8B5CF6" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" />
+</svg>
