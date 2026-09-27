@@ -38,7 +38,7 @@ export default function Home() {
               </h1>
               
               <p className="text-lg md:text-xl text-secondary font-normal leading-relaxed max-w-2xl">
-                Associate Software Engineer specializing in <span className="text-primary font-medium">Enterprise Automation</span>, <span className="text-primary font-medium">AI Engineering</span>, and <span className="text-primary font-medium">Cloud Data Pipelines</span>.
+                Vallabh Kulkarni is an Associate Software Engineer who builds scalable enterprise automations, AI systems, and cloud data pipelines for Silicon Valley tech companies and growth enterprises.
               </p>
             </div>
 
@@ -95,7 +95,7 @@ export default function Home() {
         <div className="mb-6 flex items-center justify-between">
           <div>
             <p className="font-mono text-accent text-xs mb-1">&gt; terminal_playground.sh</p>
-            <h2 className="text-2xl font-bold tracking-tight text-primary">Interactive Developer CLI</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-primary">How can you interact with Vallabh's profile via CLI?</h2>
           </div>
           <span className="hidden sm:inline-block font-mono text-xs text-tertiary">Type commands or click quick options</span>
         </div>
@@ -107,7 +107,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-12 text-center md:text-left">
             <p className="font-mono text-accent text-xs mb-2">&gt; quantified_impact.log</p>
-            <h2 className="text-3xl font-bold tracking-tight text-primary">Production Engineering Impact</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-primary">What measurable impact have these enterprise integrations delivered?</h2>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

@@ -34,6 +34,7 @@ export function NavigationShell({ children, interVariable, monoVariable }: Navig
     { path: '/work', label: 'Work' },
     { path: '/about', label: 'About' },
     { path: '/certifications', label: 'Certifications' },
+    { path: '/comparison', label: 'Comparison' },
     { path: '/resume', label: 'Resume' },
     { path: '/contact', label: 'Contact' }
   ];
@@ -140,6 +141,9 @@ export function NavigationShell({ children, interVariable, monoVariable }: Navig
             <div className="flex items-center gap-5 text-xs font-mono text-secondary flex-wrap">
               <Link href="/certifications" className="hover:text-accent transition-colors">
                 Certifications
+              </Link>
+              <Link href="/comparison" className="hover:text-accent transition-colors">
+                Comparison
               </Link>
               <Link href="/resume" className="hover:text-accent transition-colors">
                 Resume

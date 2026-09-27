@@ -1,5 +1,9 @@
-# Allow all standard crawlers
+# Content Signals: state how your content may be used.
+#   search   = appearing in a search index
+#   ai-input = used as grounding for a generated answer (RAG)
+#   ai-train = used to train or fine-tune a model
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
 # Allow AI crawlers for AEO/GEO indexing

@@ -124,6 +124,36 @@ export default function RootLayout({ children }: { children: React.ReactNode; })
         ],
       },
       {
+        '@type': 'Organization',
+        '@id': `${siteUrl}/#organization`,
+        name: 'Vallabh Kulkarni Portfolio',
+        url: siteUrl,
+        logo: `${siteUrl}/assets/vallabh-kulkarni.jpg`,
+        description: 'Associate Software Engineer specializing in Enterprise Automation, AI Systems Architecture, Workato SDK Connectors, and Cloud Data Pipelines.',
+        sameAs: [
+          'https://linkedin.com/in/vallabhkul953',
+          'https://github.com/vallabhkulkarni953',
+        ],
+      },
+      {
+        '@type': 'Service',
+        '@id': `${siteUrl}/#service-automation`,
+        name: 'Enterprise Automation & SDK Connector Development',
+        provider: { '@id': `${siteUrl}/#person` },
+        serviceType: 'Enterprise Software Engineering',
+        description: 'Custom Workato SDK connectors, REST API integrations, rate-limit retry logic, and zero-data-loss workflow automations across Salesforce, NetSuite, and LogiSense.',
+        url: `${siteUrl}/work`,
+      },
+      {
+        '@type': 'Service',
+        '@id': `${siteUrl}/#service-ai`,
+        name: 'AI Engineering & LLM Workflow Automation',
+        provider: { '@id': `${siteUrl}/#person` },
+        serviceType: 'AI Systems Architecture',
+        description: 'Applied Gemini API integration, prompt engineering, and automated communication classification engines.',
+        url: `${siteUrl}/work`,
+      },
+      {
         '@type': 'WebSite',
         '@id': `${siteUrl}/#website`,
         url: siteUrl,
@@ -136,6 +166,10 @@ export default function RootLayout({ children }: { children: React.ReactNode; })
 
   return (
     <html lang="en" className="dark">
+      <head>
+        <link rel="alternate" type="text/markdown" href="/llms.txt" title="Markdown Profile Summary" />
+        <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="Full Case Studies Markdown" />
+      </head>
       <body className="bg-background text-primary antialiased">
         <script
           type="application/ld+json"

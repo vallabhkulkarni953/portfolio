@@ -76,7 +76,7 @@ export default function Work() {
           &gt; portfolio.work()
         </p>
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-          Engineered Systems & Production Impact
+          What enterprise integration systems has Vallabh engineered?
         </h1>
         <p className="text-base md:text-lg text-secondary max-w-3xl leading-relaxed">
           Enterprise backend integrations, high-volume data pipelines, and

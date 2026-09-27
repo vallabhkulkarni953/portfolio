@@ -1,0 +1,23 @@
+{
+  "name": "Vallabh Kulkarni Portfolio MCP Server",
+  "version": "1.0.0",
+  "description": "Machine-readable context and profile resources for Vallabh Kulkarni - Associate Software Engineer specializing in Enterprise Automation, Workato SDK Connectors, and AI Systems.",
+  "homepage": "https://vallabhkulkarni.com",
+  "resources": [
+    {
+      "uri": "https://vallabhkulkarni.com/llms.txt",
+      "name": "Summary LLM Profile Context",
+      "mimeType": "text/plain"
+    },
+    {
+      "uri": "https://vallabhkulkarni.com/llms-full.txt",
+      "name": "Full Case Studies & Technical Profile",
+      "mimeType": "text/plain"
+    },
+    {
+      "uri": "https://vallabhkulkarni.com/sitemap.xml",
+      "name": "Site Index",
+      "mimeType": "application/xml"
+    }
+  ]
+}

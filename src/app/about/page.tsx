@@ -75,7 +75,7 @@ export default function About() {
         <div>
           <p className="font-mono text-accent text-xs mb-3 font-semibold">&gt; whoami</p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary mb-6">
-            Beyond Writing Code
+            Who is Vallabh Kulkarni and what is his engineering background?
           </h1>
         </div>
 
@@ -109,7 +109,7 @@ export default function About() {
           <div className="flex items-center gap-3 mb-16">
             <Briefcase size={22} className="text-accent" />
             <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-primary">
-              Career Experience
+              What professional engineering experience does Vallabh have?
             </h2>
           </div>
 
