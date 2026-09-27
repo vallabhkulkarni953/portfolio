@@ -17,66 +17,66 @@ export default function Certifications() {
     {
       id: "workato-tech-dev",
       category: "workato",
-      issuer: "Workato",
+      issuer: "Workato Credentials",
       title: "Workato Certified Technical Developer",
       badge: "Enterprise SDK & Connector Architecture",
       date: "2024",
-      url: "https://www.linkedin.com/in/vallabhkul953/details/certifications/",
+      url: "https://credentials.workato.com/39965a9b-fd3b-4781-bb16-8177f83997f3#acc.gls5UGNK",
       skills: ["Custom SDK Connectors", "REST APIs", "Ruby / JSON Schemas", "OAuth2 & Webhook Triggers"],
       description: "Highest technical certification validating advanced custom SDK connector design, REST API wrapping, rate-limit retry logic (429 handling), and complex multi-tenant enterprise integrations."
     },
     {
       id: "workato-pro-3",
       category: "workato",
-      issuer: "Workato",
+      issuer: "Workato Credentials",
       title: "Workato Automation Pro III",
       badge: "Advanced Enterprise Orchestration",
       date: "2024",
-      url: "https://www.linkedin.com/in/vallabhkul953/details/certifications/",
+      url: "https://credentials.workato.com/39965a9b-fd3b-4781-bb16-8177f83997f3#acc.gls5UGNK",
       skills: ["Parent-Child Async Pipelines", "Error Triage", "Lookup Tables", "Enterprise Data Ingestion"],
       description: "Mastery of enterprise-grade recipe architecture, asynchronous batch processing, exception handling, and error monitoring across Salesforce, NetSuite, and UKG."
     },
     {
       id: "workato-pro-2",
       category: "workato",
-      issuer: "Workato",
+      issuer: "Workato Credentials",
       title: "Workato Automation Pro II",
       badge: "Workflow Optimization",
       date: "2024",
-      url: "https://www.linkedin.com/in/vallabhkul953/details/certifications/",
+      url: "https://credentials.workato.com/d38acbab-63e0-4469-bdc0-a9b1ecf05c7d#acc.nlshLNTr",
       skills: ["Multi-App Integration", "Conditional Logic", "Data Transformation", "API Collections"],
       description: "Demonstrates proficiency in multi-system workflow automation, complex data mappings, and cross-platform integrations."
     },
     {
       id: "workato-pro-1",
       category: "workato",
-      issuer: "Workato",
+      issuer: "Workato Credentials",
       title: "Workato Automation Pro I",
       badge: "Integration Fundamentals",
       date: "2024",
-      url: "https://www.linkedin.com/in/vallabhkul953/details/certifications/",
+      url: "https://credentials.workato.com/8dfdc055-df64-45f5-99b3-8a04accb4635#acc.PmQwqjsy",
       skills: ["Recipe Design", "Trigger Configuration", "Data Mappings", "Integration Testing"],
       description: "Foundational certification covering enterprise workflow automation concepts, app connectors, and trigger-action mechanics."
     },
     {
       id: "gcp-genai",
       category: "ai",
-      issuer: "Google Cloud",
+      issuer: "Google Skills",
       title: "Google Cloud Generative AI Career Launchpad",
       badge: "LLMs & Vertex AI",
       date: "2024",
-      url: "https://www.linkedin.com/in/vallabhkul953/details/certifications/",
+      url: "https://www.skills.google/public_profiles/42b949e7-51f9-43b4-bdf2-2b45135e0683",
       skills: ["Gemini API", "Prompt Engineering", "Vertex AI", "LLM System Triage"],
       description: "Certified by Google Cloud in Generative AI architectures, prompt engineering, Gemini API integration, and enterprise AI workflow automation."
     },
     {
       id: "microsoft-sw",
       category: "engineering",
-      issuer: "Microsoft & LinkedIn",
+      issuer: "LinkedIn Learning",
       title: "Career Essentials in Software Development",
       badge: "Software Engineering & Architecture",
       date: "2024",
-      url: "https://www.linkedin.com/in/vallabhkul953/details/certifications/",
+      url: "https://www.linkedin.com/learning/certificates/444e80fa030056b63382d4533712ff116d083bbff16fc6e02bf2ca2b8966d891",
       skills: ["Software Architecture", "OOP Principles", "Git Version Control", "Developer Tools"],
       description: "Comprehensive software engineering certification validating core computer science principles, system design fundamentals, and enterprise software practices."
     },
@@ -84,21 +84,21 @@ export default function Certifications() {
       id: "hackerrank-badges",
       category: "engineering",
       issuer: "HackerRank",
-      title: "HackerRank 5★ C++ & 4★ Python Certifications",
+      title: "Python (Basic) & C++ Certifications",
       badge: "Algorithms & Problem Solving",
       date: "2023 - 2024",
-      url: "https://www.linkedin.com/in/vallabhkul953/details/certifications/",
+      url: "https://www.hackerrank.com/certificates/c385cb1a30f3",
       skills: ["Data Structures & Algorithms", "Object-Oriented C++", "Python Scripting", "Algorithmic Efficiency"],
-      description: "Awarded 5 Stars in C++ (Object-Oriented Programming) and 4 Stars in Python for algorithmic problem solving and clean code implementation."
+      description: "Awarded official HackerRank Python Certificate and 5 Stars in C++ for algorithmic problem solving and clean code implementation."
     },
     {
       id: "udemy-python",
       category: "engineering",
-      issuer: "Udemy (Jose Portilla)",
+      issuer: "Udemy",
       title: "Complete Python Bootcamp: Zero to Hero",
       badge: "Advanced Python Engineering",
       date: "2023",
-      url: "https://www.linkedin.com/in/vallabhkul953/details/certifications/",
+      url: "https://www.udemy.com/certificate/UC-8575662a-3a92-4742-bb34-08d1b87af1b4/",
       skills: ["Python OOP", "Data Processing", "File I/O & Automation", "Decorator Patterns"],
       description: "In-depth technical training covering Python data structures, object-oriented programming, decoratory functions, and backend automation scripting."
     }
@@ -228,7 +228,7 @@ export default function Certifications() {
                   <ShieldCheck size={16} /> Verified Credential
                 </span>
                 <span className="text-secondary group-hover/link:text-accent transition-colors flex items-center gap-1">
-                  Verify on LinkedIn <ExternalLink size={12} />
+                  Verify on {cert.issuer} <ExternalLink size={12} />
                 </span>
               </a>
             </div>
