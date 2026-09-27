@@ -8,6 +8,7 @@ import {
   Mail,
   Linkedin,
   Github,
+  FileText
 } from "lucide-react";
 import { PageTransition } from "@/src/components/PageTransition";
 
@@ -29,51 +30,54 @@ export default function Resume() {
     <PageTransition>
       <div className="max-w-4xl mx-auto px-6 py-12 md:py-20">
         {/* Actions Bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-12 no-print bg-surface p-4 rounded-xl border border-border">
-          <p className="text-sm font-mono text-secondary">&gt; resume.pdf</p>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-10 no-print glass-panel p-4 rounded-2xl border border-border">
+          <div className="flex items-center gap-2">
+            <FileText size={18} className="text-accent" />
+            <p className="text-xs font-mono text-secondary">Vallabh_Kulkarni_Resume.pdf</p>
+          </div>
 
-          <div className="flex items-center gap-3 w-full sm:w-auto font-mono">
+          <div className="flex items-center gap-3 w-full sm:w-auto font-mono text-xs">
             <button
               onClick={handlePrint}
-              className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-4 py-2 bg-background border border-border rounded-md text-sm font-medium hover:border-accent transition-colors text-primary"
+              className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-4 py-2 bg-background border border-border rounded-lg font-medium hover:border-accent transition-all text-primary"
             >
-              <Printer size={16} />
-              Print
+              <Printer size={15} />
+              Print Web Resume
             </button>
 
             <button
               onClick={handleDownload}
-              className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-4 py-2 bg-primary text-background rounded-md text-sm font-medium hover:bg-primary/90 transition-colors"
+              className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-5 py-2 bg-accent text-background rounded-lg font-bold hover:bg-accent-light transition-all shadow-md shadow-accent/10"
             >
-              <Download size={16} />
-              Download
+              <Download size={15} />
+              Download PDF
             </button>
           </div>
         </div>
 
         {/* Resume Content Sheet */}
-        <div className="bg-surface p-8 md:p-12 border border-border shadow-sm rounded-xl print:bg-white print:text-black print:border-none print:shadow-none print:p-0">
+        <div className="glass-panel p-8 md:p-12 border border-border shadow-2xl rounded-2xl print:bg-white print:text-black print:border-none print:shadow-none print:p-0">
           {/* Header */}
-          <header className="border-b border-border pb-6 mb-6">
-            <h1 className="text-3xl font-bold text-primary mb-2">
+          <header className="border-b border-border/80 pb-6 mb-8 print:border-black">
+            <h1 className="text-3xl md:text-4xl font-bold text-primary mb-2 print:text-black">
               Vallabh Kulkarni
             </h1>
 
-            <p className="text-lg text-secondary mb-4">
-              Software Engineer | Backend | Enterprise Integrations
+            <p className="text-base md:text-lg text-accent font-mono mb-4 print:text-gray-800 font-semibold">
+              Associate Software Engineer | Enterprise Automation & AI Systems
             </p>
 
-            <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-secondary">
-              <span className="flex items-center gap-1 text-primary">
-                <Phone size={14} />
+            <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs md:text-sm text-secondary print:text-gray-700 font-mono">
+              <span className="flex items-center gap-1.5 text-primary print:text-black">
+                <Phone size={14} className="text-accent print:text-black" />
                 +91 9022984857
               </span>
 
               <a
                 href="mailto:vallabhkul953@gmail.com"
-                className="flex items-center gap-1 hover:text-primary"
+                className="flex items-center gap-1.5 hover:text-accent transition-colors"
               >
-                <Mail size={14} />
+                <Mail size={14} className="text-accent print:text-black" />
                 vallabhkul953@gmail.com
               </a>
 
@@ -81,27 +85,27 @@ export default function Resume() {
                 href="https://linkedin.com/in/vallabhkul953"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-1 hover:text-primary"
+                className="flex items-center gap-1.5 hover:text-accent transition-colors"
               >
-                <Linkedin size={14} />
-                vallabhkul953
+                <Linkedin size={14} className="text-accent print:text-black" />
+                linkedin.com/in/vallabhkul953
               </a>
 
               <a
                 href="https://github.com/vallabhkulkarni953"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-1 hover:text-primary"
+                className="flex items-center gap-1.5 hover:text-accent transition-colors"
               >
-                <Github size={14} />
-                vallabhkulkarni953
+                <Github size={14} className="text-accent print:text-black" />
+                github.com/vallabhkulkarni953
               </a>
 
               <a
                 href="https://vallabhkulkarni.com"
-                className="flex items-center gap-1 hover:text-primary"
+                className="flex items-center gap-1.5 hover:text-accent transition-colors"
               >
-                <ExternalLink size={14} />
+                <ExternalLink size={14} className="text-accent print:text-black" />
                 vallabhkulkarni.com
               </a>
             </div>
@@ -109,116 +113,88 @@ export default function Resume() {
 
           {/* Summary */}
           <section className="mb-8">
-            <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-3">
+            <h2 className="text-xs font-bold uppercase tracking-widest text-accent font-mono mb-3 print:text-black">
               Professional Summary
             </h2>
 
-            <p className="text-sm leading-relaxed text-primary">
-              Software Engineer with 1 year of experience building enterprise
-              automation, backend integrations, and scalable API-driven systems.
-              Delivered production-ready software using Python, Workato,
-              Salesforce, and cloud technologies to improve reliability,
-              performance, and operational efficiency.
+            <p className="text-sm leading-relaxed text-secondary print:text-black">
+              Software Engineer with hands-on enterprise experience building workflow automation, backend SDK integrations, and scalable API-driven data pipelines. Delivered production-ready systems using Python, Workato, Salesforce, AWS, BigQuery, and Gemini API to increase reliability, performance, and business outcomes.
             </p>
           </section>
 
-          {/* Skills */}
+          {/* Technical Skills */}
           <section className="mb-8">
-            <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-3">
+            <h2 className="text-xs font-bold uppercase tracking-widest text-accent font-mono mb-3 print:text-black">
               Technical Skills
             </h2>
 
-            <div className="text-sm text-primary space-y-2">
+            <div className="text-xs md:text-sm text-secondary space-y-2 print:text-black font-mono">
               <p>
-                <span className="font-bold">Languages:</span> Python, SQL
+                <span className="font-bold text-primary print:text-black">Languages:</span> Python, SQL, TypeScript, JavaScript
               </p>
-
               <p>
-                <span className="font-bold">Backend & Integration:</span> REST
-                APIs, SDK Development, Enterprise Integrations, Workflow
-                Automation
+                <span className="font-bold text-primary print:text-black">Integration & Automation:</span> Workato SDK Connectors, Salesforce (SFDC), LogiSense, NetSuite, REST APIs, Webhooks
               </p>
-
               <p>
-                <span className="font-bold">Cloud & Platforms:</span> AWS,
-                Salesforce, Workato
+                <span className="font-bold text-primary print:text-black">Cloud & Infrastructure:</span> AWS (S3, IAM Roles, Policies), BigQuery, Looker, Hex
               </p>
-
               <p>
-                <span className="font-bold">Databases:</span> MySQL, MongoDB,
-                BigQuery
+                <span className="font-bold text-primary print:text-black">AI & LLMs:</span> Gemini API, MCP, Structured Prompt Engineering, Deep Learning
               </p>
-
               <p>
-                <span className="font-bold">AI Engineering:</span> Gemini API,
-                MCP, Prompt Engineering
-              </p>
-
-              <p>
-                <span className="font-bold">Developer Tools:</span> Git,
-                Postman, VS Code
+                <span className="font-bold text-primary print:text-black">Databases & Tools:</span> MySQL, MongoDB, BigQuery, Git, Postman, VS Code
               </p>
             </div>
           </section>
 
           {/* Experience */}
           <section className="mb-8">
-            <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-4">
+            <h2 className="text-xs font-bold uppercase tracking-widest text-accent font-mono mb-4 print:text-black">
               Professional Experience
             </h2>
 
             {/* OneSolve */}
             <div className="mb-6">
               <div className="flex justify-between items-baseline mb-1">
-                <h3 className="font-bold text-primary text-base">OneSolve</h3>
-                <span className="text-xs font-mono text-secondary">
-                  Remote (California, USA)
+                <h3 className="font-bold text-primary text-base print:text-black">OneSolve</h3>
+                <span className="text-xs font-mono text-secondary print:text-gray-600">
+                  California, USA (Remote)
                 </span>
               </div>
 
               <div className="flex justify-between items-baseline mb-1">
-                <p className="text-sm font-medium italic text-secondary">
+                <p className="text-xs font-mono text-accent print:text-black">
                   Associate Software Engineer
                 </p>
-                <span className="text-xs font-mono text-secondary">
-                  July 2025 – Present
+                <span className="text-xs font-mono text-secondary print:text-gray-600">
+                  Aug 2024 – Present
                 </span>
               </div>
 
               <div className="flex justify-between items-baseline mb-3">
-                <p className="text-sm font-medium italic text-secondary">
+                <p className="text-xs font-mono text-secondary italic">
                   Software Engineer Intern
                 </p>
-                <span className="text-xs font-mono text-secondary">
-                  Feb 2025 – June 2025
+                <span className="text-xs font-mono text-secondary print:text-gray-600">
+                  Nov 2023 – Aug 2024
                 </span>
               </div>
 
-              <ul className="list-disc ml-4 text-sm space-y-1.5 text-primary">
+              <ul className="list-disc ml-4 text-xs md:text-sm space-y-1.5 text-secondary print:text-black">
                 <li>
-                  Developed enterprise automation solutions, backend
-                  integrations, and scalable workflow systems using Python,
-                  Workato, Salesforce, AWS, SQL, and REST APIs.
+                  Developed enterprise automation solutions, backend integrations, and scalable workflow systems using Python, Workato, Salesforce, AWS, BigQuery, and REST APIs.
                 </li>
                 <li>
-                  Built and enhanced 5+ enterprise automation workflows,
-                  maintaining 25+ production recipes while improving system
-                  reliability, scalability, and operational efficiency.
+                  Built and enhanced 5+ enterprise automation workflows, maintaining 25+ production recipes while improving system reliability and operational efficiency.
                 </li>
                 <li>
-                  Designed, developed, and maintained 5 SDK connectors (2 new, 3
-                  enhanced) to standardize enterprise integrations and simplify
-                  reusable API interactions across client solutions.
+                  Designed, developed, and maintained 5 SDK connectors (2 new, 3 enhanced) to standardize enterprise integrations and eliminate 25+ hours of monthly maintenance.
                 </li>
                 <li>
-                  Delivered 6 major production releases across enterprise
-                  automation and integration platforms, managing implementation,
-                  testing, deployment, production support, and issue resolution.
+                  Delivered 6 major production releases across enterprise integration platforms, managing testing, deployment, safeguards, and issue resolution.
                 </li>
                 <li>
-                  Partnered with cross-functional teams and enterprise clients,
-                  including Fastly and Dandy, to deliver production-ready
-                  integration solutions across CRM, ERP, and cloud platforms.
+                  Partnered with Silicon Valley clients including Fastly and Dandy to deliver high-volume production integrations across CRM, ERP, and cloud platforms.
                 </li>
               </ul>
             </div>
@@ -226,226 +202,67 @@ export default function Resume() {
             {/* MediMaze Solutions */}
             <div>
               <div className="flex justify-between items-baseline mb-1">
-                <h3 className="font-bold text-primary text-base">
+                <h3 className="font-bold text-primary text-base print:text-black">
                   MediMaze Solutions Pvt. Ltd.
                 </h3>
-                <span className="text-xs font-mono text-secondary">
-                  Chinchwad, Pune
+                <span className="text-xs font-mono text-secondary print:text-gray-600">
+                  Pune, India
                 </span>
               </div>
 
               <div className="flex justify-between items-baseline mb-3">
-                <p className="text-sm font-medium italic text-secondary">
+                <p className="text-xs font-mono text-secondary italic">
                   Data Science Intern
                 </p>
-                <span className="text-xs font-mono text-secondary">
-                  May 2024 – July 2024
+                <span className="text-xs font-mono text-secondary print:text-gray-600">
+                  Jun 2023 – Oct 2023
                 </span>
               </div>
 
-              <ul className="list-disc ml-4 text-sm space-y-1.5 text-primary">
+              <ul className="list-disc ml-4 text-xs md:text-sm space-y-1.5 text-secondary print:text-black">
                 <li>
-                  Developed Python-based machine learning solutions for medical
-                  imaging and healthcare datasets, working with DICOM images and
-                  clinical records to support diagnostic workflows.
+                  Developed Python-based machine learning solutions for medical imaging and healthcare datasets using DICOM files to support diagnostic workflows.
                 </li>
               </ul>
             </div>
           </section>
 
-          {/* Enterprise Projects */}
+          {/* Key Accomplishments */}
           <section className="mb-8">
-            <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-4">
-              Enterprise Projects
+            <h2 className="text-xs font-bold uppercase tracking-widest text-accent font-mono mb-3 print:text-black">
+              Achievements & Certifications
             </h2>
 
-            {/* Dandy: SendBlue */}
-            <div className="mb-6">
-              <div className="flex justify-between items-baseline mb-1">
-                <h3 className="font-bold text-primary">
-                  Dandy: SendBlue SMS Training Confirmation Platform
-                </h3>
-              </div>
-              <p className="text-xs font-mono text-secondary mb-2">
-                Workato, Salesforce, Sendblue, Gemini
-              </p>
-              <p className="text-sm text-secondary mb-2">
-                Owned the end-to-end design, development, testing, deployment,
-                and production rollout of an automated SMS training confirmation
-                platform for Dandy, enabling intelligent outreach, reminders,
-                rescheduling, and AI-powered response processing.
-              </p>
-              <ul className="list-disc ml-4 text-sm space-y-1 text-primary">
-                <li>
-                  Designed and developed a custom SendBlue SDK Connector with
-                  10+ reusable REST API actions, webhook triggers, and resilient
-                  retry mechanisms for rate-limited (429) and transient
-                  failures, enabling scalable SMS automation.
-                </li>
-                <li>
-                  Engineered a timezone-aware scheduling engine that guaranteed
-                  zero missed business-hour message deliveries by buffering and
-                  orchestrating outbound communication according to each
-                  recipient's local business hours.
-                </li>
-                <li>
-                  Integrated the Gemini API to automatically classify inbound
-                  SMS responses into Confirmed, Reschedule, and Unconfirmed
-                  workflows, eliminating manual response triage and improving
-                  operational efficiency.
-                </li>
-                <li>
-                  Executed a zero-data-loss migration from the legacy SendBlue
-                  workflow into Workato Version 2, designing deployment
-                  safeguards, rollback planning, validation strategies, and
-                  post-production monitoring.
-                </li>
-              </ul>
-            </div>
-
-            {/* Dandy: Forma AI */}
-            <div className="mb-6">
-              <div className="flex justify-between items-baseline mb-1">
-                <h3 className="font-bold text-primary">
-                  Dandy: Forma AI Compensation Data Platform
-                </h3>
-              </div>
-              <p className="text-xs font-mono text-secondary mb-2">
-                Workato, Salesforce, UKG, BigQuery, AWS
-              </p>
-              <p className="text-sm text-secondary mb-2">
-                Developed a scalable enterprise compensation data pipeline
-                integrating Salesforce, UKG, Looker, Hex, Amazon S3, and
-                BigQuery to support secure analytics and historical reporting.
-              </p>
-              <ul className="list-disc ml-4 text-sm space-y-1 text-primary">
-                <li>
-                  Designed secure cross-account AWS infrastructure using IAM
-                  roles, inline policies, and Amazon S3 for enterprise-grade
-                  data ingestion.
-                </li>
-                <li>
-                  Reduced UKG pipeline execution time by 87% through SQL query
-                  optimization and self-join restructuring.
-                </li>
-                <li>
-                  Eliminated 90-minute workflow timeouts by implementing
-                  asynchronous child functions across five Salesforce objects.
-                </li>
-                <li>
-                  Built BigQuery-powered historical snapshot workflows
-                  supporting dynamic reporting across quarterly compensation
-                  periods.
-                </li>
-              </ul>
-            </div>
-
-            {/* Fastly: O2C */}
-            <div>
-              <div className="flex justify-between items-baseline mb-1">
-                <h3 className="font-bold text-primary">
-                  Fastly: Order-to-Cash (O2C) Optimization
-                </h3>
-              </div>
-              <p className="text-xs font-mono text-secondary mb-2">
-                Workato, LogiSense, NetSuite, SFDC
-              </p>
-              <p className="text-sm text-secondary mb-2">
-                Enhanced Fastly's Order-to-Cash integration platform by
-                modernizing enterprise integrations across Salesforce,
-                LogiSense, and NetSuite through reusable SDK development and
-                workflow optimization.
-              </p>
-              <ul className="list-disc ml-4 text-sm space-y-1 text-primary">
-                <li>
-                  Built a reusable LogiSense SDK Connector with 20+ REST API
-                  actions, eliminating 25+ monthly hours of API maintenance.
-                </li>
-                <li>
-                  Improved order processing performance by 30% through modular
-                  connector architecture replacing direct HTTP integrations
-                  across 40+ production workflows.
-                </li>
-                <li>
-                  Resolved 10+ production-critical integration defects spanning
-                  Salesforce, LogiSense, and NetSuite through systematic
-                  root-cause analysis and production debugging.
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          {/* Technical Achievements */}
-          <section className="mb-8">
-            <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-3">
-              Technical Achievements
-            </h2>
-
-            <ul className="list-disc ml-4 text-sm space-y-1 text-primary">
+            <ul className="list-disc ml-4 text-xs md:text-sm space-y-1.5 text-secondary print:text-black">
               <li>
-                Published research in the International Research Journal of
-                Engineering and Technology (IRJET) on Big Data Privacy and
-                Security, exploring secure data management and
-                privacy-preserving techniques for large-scale systems.
+                Workato Certified: Technical Developer, Automation Pro I, Automation Pro II, and Automation Pro III.
               </li>
               <li>
-                Solved 250+ algorithmic problems on LeetCode, strengthening
-                expertise in Data Structures and Algorithms.
+                Published research in International Research Journal of Engineering and Technology (IRJET) on Big Data Privacy and Security.
               </li>
               <li>
-                Earned 4★ in Python and 5★ in C++ (Object-Oriented Programming)
-                on HackerRank.
+                Solved 250+ algorithmic problems on LeetCode. 4★ in Python & 5★ in C++ on HackerRank.
               </li>
             </ul>
           </section>
 
           {/* Education */}
-          <section className="mb-8">
-            <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-3">
+          <section>
+            <h2 className="text-xs font-bold uppercase tracking-widest text-accent font-mono mb-3 print:text-black">
               Education
             </h2>
 
-            <div className="text-sm text-primary">
+            <div className="text-xs md:text-sm text-secondary print:text-black">
               <div className="flex justify-between items-baseline mb-1">
-                <p className="font-bold">
-                  Pimpri Chinchwad College of Engineering, Pune (PCCOE)
+                <p className="font-bold text-primary print:text-black">
+                  Pimpri Chinchwad College of Engineering (PCCOE Pune)
                 </p>
-                <span className="text-xs font-mono text-secondary">
-                  Dec 2021 – July 2025
+                <span className="text-xs font-mono text-secondary print:text-gray-600">
+                  Dec 2021 – Jul 2025
                 </span>
               </div>
-              <p className="text-secondary">
-                Bachelor of Technology in Computer Engineering
-              </p>
-              <p className="font-mono text-xs text-secondary mt-1">
-                CGPA: 9.05 / 10
-              </p>
+              <p>Bachelor of Technology in Computer Engineering (CGPA: 9.05 / 10)</p>
             </div>
-          </section>
-
-          {/* Certifications */}
-          <section>
-            <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-3">
-              Certifications
-            </h2>
-
-            <ul className="list-disc ml-4 text-sm space-y-1 text-primary">
-              <li>
-                Technical Developer, Automation Pro I, Automation Pro II, and
-                Automation Pro III by Workato
-              </li>
-              <li>
-                Google Cloud Career Launchpad Generative AI Track by Google
-              </li>
-              <li>
-                Career Essentials in Software Development by Microsoft and
-                LinkedIn
-              </li>
-              <li>
-                The Complete Python Bootcamp from Zero to Hero in Python on
-                Udemy by Jose Portilla
-              </li>
-            </ul>
           </section>
         </div>
       </div>

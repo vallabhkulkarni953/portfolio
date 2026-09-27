@@ -1,0 +1,38 @@
+# Vallabh Kulkarni - Full Technical Profile & Case Studies (LLM Context)
+
+## Biography & Summary
+Vallabh Kulkarni is an Associate Software Engineer with expertise in Enterprise Automation, AI Engineering, Workato SDK Connector development, Cloud Data Pipelines, and Backend Software Architecture. He works at OneSolve (California, USA - Remote) and builds production systems for Silicon Valley enterprise clients.
+
+## Detailed Enterprise Case Studies
+
+### 1. Dandy: SendBlue SMS Training Confirmation Platform
+- **Role**: Lead Integration & Systems Developer
+- **Stack**: Workato, Salesforce, Sendblue, Gemini API, REST APIs
+- **Deliverables**:
+  - Custom SendBlue SDK Connector with 10+ reusable REST API actions, webhook triggers, and 429 rate limit retry logic.
+  - Timezone-aware scheduling engine ensuring zero missed business-hour deliveries.
+  - Gemini API integration to automatically classify inbound SMS into Confirmed, Reschedule, and Unconfirmed.
+  - Zero-data-loss migration into Workato Version 2 with rollback safeguards.
+
+### 2. Dandy: Forma AI Compensation Data Platform
+- **Role**: Backend & Data Pipeline Engineer
+- **Stack**: Workato, Salesforce, UKG, BigQuery, AWS S3, IAM Roles
+- **Deliverables**:
+  - Secure cross-account AWS infrastructure using IAM roles and Amazon S3.
+  - Reduced UKG pipeline execution time by 87% through SQL query optimization and self-join restructuring.
+  - Eliminated 90-minute workflow timeouts using asynchronous child functions across 5 Salesforce objects.
+  - BigQuery historical snapshot workflows for quarterly compensation reporting.
+
+### 3. Fastly: Order-to-Cash (O2C) Enterprise Optimization
+- **Role**: Integration Engineer
+- **Stack**: Workato, LogiSense, NetSuite, Salesforce, REST APIs
+- **Deliverables**:
+  - Built reusable LogiSense SDK Connector with 20+ REST API actions, saving 25+ monthly hours of maintenance.
+  - Accelerated order processing speed by 30% across 40+ production workflows.
+  - Resolved 10+ production-critical integration defects across Salesforce, LogiSense, and NetSuite.
+
+## Education & Certifications
+- **Degree**: Bachelor of Technology in Computer Engineering (Dec 2021 – July 2025)
+- **Institution**: Pimpri Chinchwad College of Engineering, Pune (PCCOE)
+- **CGPA**: 9.05 / 10
+- **Certifications**: Workato Technical Developer, Workato Automation Pro I, II, III; Google Cloud Generative AI.

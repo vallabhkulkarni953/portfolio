@@ -1,20 +1,29 @@
 # Vallabh Kulkarni
 
-> Software Engineer specializing in Enterprise Automation, AI Engineering, and scalable data pipelines.
+> Associate Software Engineer specializing in Enterprise Automation, AI Engineering, Workato SDK Connectors, and Cloud Data Pipelines.
 
-## About
-Vallabh Kulkarni develops intelligent systems, workflow automations, and backend solutions. He has experience working with enterprise integrations, machine learning models, and modern web applications.
+## Profile Summary
+Vallabh Kulkarni is an Associate Software Engineer at OneSolve building mission-critical enterprise backend integrations, AI workflows, and data pipelines for Silicon Valley enterprise clients including Fastly and Dandy.
+
+## Verified Key Engineering Metrics
+- **-87% UKG Pipeline Runtime**: Query optimization & self-join restructuring.
+- **25+ Hours/Month Maintenance Saved**: Delivered via 5 custom SDK connectors (Workato, SendBlue, LogiSense).
+- **+30% Order Processing Speed**: Modular connector architecture across 40+ production recipes.
+- **6 Major Production Releases**: Managed deployment, safeguards, rollback plans, and zero data loss.
+- **4 Workato Certifications**: Technical Developer, Automation Pro I, II, III.
+- **Academic & Algorithmic Excellence**: 9.05 / 10 CGPA from PCCOE Pune, 250+ LeetCode problems solved.
 
 ## Core Technical Stack
-- **Languages**: Python, TypeScript, JavaScript, SQL, Ruby
-- **Automation & Integrations**: Workato, Salesforce, GCP, REST APIs, Webhooks
-- **Frameworks & Frontend**: Next.js, React, Tailwind CSS, Framer Motion
-- **AI & Data**: Google Cloud Vertex AI / Gemini API, Deep Learning, BigQuery, PostgreSQL
+- **Languages**: Python, SQL, TypeScript, JavaScript, HTML/CSS
+- **Automation & Integrations**: Workato SDK Connectors, Salesforce (SFDC), LogiSense, NetSuite, REST APIs, Webhooks
+- **AI & Data**: Gemini API, BigQuery, AWS S3 & IAM Roles, Deep Learning, MySQL
+- **Developer Tools**: Git, Postman, VS Code, Next.js, Tailwind CSS
 
 ## Primary Links
-- [Website](https://vallabhkulkarni.com): Homepage and overview of recent projects
-- [About](https://vallabhkulkarni.com/about): Career background, education, and detailed technical focus
-- [Work](https://vallabhkulkarni.com/work): Enterprise automation case studies and technical projects
-- [Contact](https://vallabhkulkarni.com/contact): Direct outreach, collaboration inquiries, and professional profiles
-- [GitHub](https://github.com/vallabhkul953): Open source repositories and personal code
-- [LinkedIn](https://linkedin.com/in/vallabhkul953): Professional background and enterprise history
+- [Website](https://vallabhkulkarni.com): Official engineering portfolio & project showcase
+- [About](https://vallabhkulkarni.com/about): Technical focus, career background, and education
+- [Work Projects](https://vallabhkulkarni.com/work): Enterprise case studies (SendBlue, Forma AI, Order-to-Cash)
+- [Resume](https://vallabhkulkarni.com/resume): Web & PDF resume
+- [Contact](https://vallabhkulkarni.com/contact): Direct outreach, collaboration inquiries, and contact form
+- [GitHub](https://github.com/vallabhkulkarni953): Technical repositories and open source code
+- [LinkedIn](https://linkedin.com/in/vallabhkul953): Professional experience and enterprise history
