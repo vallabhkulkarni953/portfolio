@@ -195,7 +195,7 @@ export default function Contact() {
               </a>
 
               <a
-                href="https://github.com/vallabhkul953"
+                href="https://github.com/vallabhkulkarni953"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-4 p-4 rounded-xl border border-border bg-surface hover:border-accent/50 transition-colors group"
