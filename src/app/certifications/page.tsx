@@ -6,7 +6,8 @@ import { PageTransition } from "@/src/components/PageTransition";
 import {
   Award,
   ShieldCheck,
-  ArrowUpRight
+  ArrowUpRight,
+  ExternalLink
 } from "lucide-react";
 
 export default function Certifications() {
@@ -20,6 +21,7 @@ export default function Certifications() {
       title: "Workato Certified Technical Developer",
       badge: "Enterprise SDK & Connector Architecture",
       date: "2024",
+      url: "https://www.linkedin.com/in/vallabhkul953/details/certifications/",
       skills: ["Custom SDK Connectors", "REST APIs", "Ruby / JSON Schemas", "OAuth2 & Webhook Triggers"],
       description: "Highest technical certification validating advanced custom SDK connector design, REST API wrapping, rate-limit retry logic (429 handling), and complex multi-tenant enterprise integrations."
     },
@@ -30,6 +32,7 @@ export default function Certifications() {
       title: "Workato Automation Pro III",
       badge: "Advanced Enterprise Orchestration",
       date: "2024",
+      url: "https://www.linkedin.com/in/vallabhkul953/details/certifications/",
       skills: ["Parent-Child Async Pipelines", "Error Triage", "Lookup Tables", "Enterprise Data Ingestion"],
       description: "Mastery of enterprise-grade recipe architecture, asynchronous batch processing, exception handling, and error monitoring across Salesforce, NetSuite, and UKG."
     },
@@ -40,6 +43,7 @@ export default function Certifications() {
       title: "Workato Automation Pro II",
       badge: "Workflow Optimization",
       date: "2024",
+      url: "https://www.linkedin.com/in/vallabhkul953/details/certifications/",
       skills: ["Multi-App Integration", "Conditional Logic", "Data Transformation", "API Collections"],
       description: "Demonstrates proficiency in multi-system workflow automation, complex data mappings, and cross-platform integrations."
     },
@@ -50,6 +54,7 @@ export default function Certifications() {
       title: "Workato Automation Pro I",
       badge: "Integration Fundamentals",
       date: "2024",
+      url: "https://www.linkedin.com/in/vallabhkul953/details/certifications/",
       skills: ["Recipe Design", "Trigger Configuration", "Data Mappings", "Integration Testing"],
       description: "Foundational certification covering enterprise workflow automation concepts, app connectors, and trigger-action mechanics."
     },
@@ -60,6 +65,7 @@ export default function Certifications() {
       title: "Google Cloud Generative AI Career Launchpad",
       badge: "LLMs & Vertex AI",
       date: "2024",
+      url: "https://www.linkedin.com/in/vallabhkul953/details/certifications/",
       skills: ["Gemini API", "Prompt Engineering", "Vertex AI", "LLM System Triage"],
       description: "Certified by Google Cloud in Generative AI architectures, prompt engineering, Gemini API integration, and enterprise AI workflow automation."
     },
@@ -70,6 +76,7 @@ export default function Certifications() {
       title: "Career Essentials in Software Development",
       badge: "Software Engineering & Architecture",
       date: "2024",
+      url: "https://www.linkedin.com/in/vallabhkul953/details/certifications/",
       skills: ["Software Architecture", "OOP Principles", "Git Version Control", "Developer Tools"],
       description: "Comprehensive software engineering certification validating core computer science principles, system design fundamentals, and enterprise software practices."
     },
@@ -80,6 +87,7 @@ export default function Certifications() {
       title: "HackerRank 5★ C++ & 4★ Python Certifications",
       badge: "Algorithms & Problem Solving",
       date: "2023 - 2024",
+      url: "https://www.linkedin.com/in/vallabhkul953/details/certifications/",
       skills: ["Data Structures & Algorithms", "Object-Oriented C++", "Python Scripting", "Algorithmic Efficiency"],
       description: "Awarded 5 Stars in C++ (Object-Oriented Programming) and 4 Stars in Python for algorithmic problem solving and clean code implementation."
     },
@@ -90,6 +98,7 @@ export default function Certifications() {
       title: "Complete Python Bootcamp: Zero to Hero",
       badge: "Advanced Python Engineering",
       date: "2023",
+      url: "https://www.linkedin.com/in/vallabhkul953/details/certifications/",
       skills: ["Python OOP", "Data Processing", "File I/O & Automation", "Decorator Patterns"],
       description: "In-depth technical training covering Python data structures, object-oriented programming, decoratory functions, and backend automation scripting."
     }
@@ -110,6 +119,7 @@ export default function Certifications() {
         '@type': 'EducationalOccupationalCredential',
         name: c.title,
         credentialCategory: c.badge,
+        url: c.url,
         recognizedBy: {
           '@type': 'Organization',
           name: c.issuer
@@ -138,7 +148,7 @@ export default function Certifications() {
           </h1>
 
           <p className="text-base md:text-lg text-secondary max-w-3xl leading-relaxed">
-            Enterprise automation credentials, Google Cloud AI certifications, and computer science problem-solving honors achieved by Vallabh Kulkarni.
+            Enterprise automation credentials, Google Cloud AI certifications, and computer science problem-solving honors.
           </p>
         </div>
 
@@ -207,14 +217,20 @@ export default function Certifications() {
                 </div>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-border/60 flex items-center justify-between text-xs font-mono text-accent">
+              {/* Verification Link */}
+              <a
+                href={cert.url}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-6 pt-4 border-t border-border/60 flex items-center justify-between text-xs font-mono text-accent hover:text-accent-light transition-colors group/link"
+              >
                 <span className="flex items-center gap-1.5 font-medium">
                   <ShieldCheck size={16} /> Verified Credential
                 </span>
-                <span className="text-tertiary group-hover:text-accent transition-colors">
-                  Workato / Google Cloud &rarr;
+                <span className="text-secondary group-hover/link:text-accent transition-colors flex items-center gap-1">
+                  Verify on LinkedIn <ExternalLink size={12} />
                 </span>
-              </div>
+              </a>
             </div>
           ))}
         </div>
