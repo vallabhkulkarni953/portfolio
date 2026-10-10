@@ -32,9 +32,6 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  alternates: {
-    canonical: '/',
-  },
   icons: {
     icon: [
       { url: '/icon.svg', type: 'image/svg+xml' }

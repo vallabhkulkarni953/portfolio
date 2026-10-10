@@ -11,10 +11,37 @@ import {
 } from "lucide-react";
 import { FilterableWorkGrid } from "@/src/components/FilterableWorkGrid";
 
+const siteUrl = 'https://vallabhkulkarni.com';
+
 export const metadata: Metadata = {
-  title: "Enterprise Projects & Engineered Systems",
+  title: "Enterprise Projects & Case Studies | Vallabh Kulkarni",
   description:
     "Enterprise backend integrations, Workato SDK connectors, high-volume data pipelines, and AI systems delivered by Vallabh Kulkarni.",
+  alternates: {
+    canonical: `${siteUrl}/work`,
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: `${siteUrl}/work`,
+    title: 'Enterprise Projects & Case Studies | Vallabh Kulkarni',
+    description: 'Enterprise backend integrations, Workato SDK connectors, high-volume data pipelines, and AI systems delivered by Vallabh Kulkarni.',
+    siteName: 'Vallabh Kulkarni Portfolio',
+    images: [
+      {
+        url: `${siteUrl}/assets/vallabh-kulkarni.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Vallabh Kulkarni - Enterprise Projects',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Enterprise Projects & Case Studies | Vallabh Kulkarni',
+    description: 'Enterprise backend integrations, Workato SDK connectors, high-volume data pipelines, and AI systems delivered by Vallabh Kulkarni.',
+    images: [`${siteUrl}/assets/vallabh-kulkarni.jpg`],
+  },
 };
 
 export default function Work() {
@@ -68,8 +95,51 @@ export default function Work() {
     },
   ];
 
+  const workSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Vallabh Kulkarni Case Studies & Technical Projects',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        item: {
+          '@type': 'CreativeWork',
+          name: 'Custom Workato SDK Connector Architecture',
+          description: 'Standardized REST API wrapping, OAuth2 authentication, and 429 rate-limiting retries saving 25+ hours/month.',
+          author: { '@type': 'Person', name: 'Vallabh Kulkarni' }
+        }
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        item: {
+          '@type': 'CreativeWork',
+          name: 'UKG Enterprise Data Pipeline (-87% Runtime)',
+          description: 'SQL query optimization and parent-child async pipeline architecture eliminating 90-minute timeout bottlenecks.',
+          author: { '@type': 'Person', name: 'Vallabh Kulkarni' }
+        }
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        item: {
+          '@type': 'CreativeWork',
+          name: 'Order-to-Cash & NetSuite Workflow Optimization',
+          description: '30% speed acceleration across 40+ production recipes connecting Salesforce, NetSuite, and LogiSense.',
+          author: { '@type': 'Person', name: 'Vallabh Kulkarni' }
+        }
+      }
+    ]
+  };
+
   return (
     <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(workSchema) }}
+      />
+
       {/* Section Header */}
       <div className="mb-16 space-y-4">
         <p className="font-mono text-accent text-xs font-semibold uppercase tracking-wider">
