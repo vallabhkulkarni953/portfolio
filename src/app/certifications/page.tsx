@@ -5,7 +5,7 @@ const siteUrl = 'https://vallabhkulkarni.com';
 
 export const metadata: Metadata = {
   title: 'Verified Technical Certifications | Workato Pro & Google Cloud AI',
-  description: 'Official technical certifications for Vallabh Kulkarni: Workato Certified Technical Developer, Workato Automation Pro I-III, Google Cloud Generative AI, HackerRank C++/Python.',
+  description: 'Official technical credentials for Vallabh Kulkarni: Workato Certified Technical Developer, Automation Pro I-III, Google Cloud Generative AI, and HackerRank.',
   alternates: {
     canonical: `${siteUrl}/certifications`,
   },

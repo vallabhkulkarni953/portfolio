@@ -16,7 +16,7 @@ const siteUrl = 'https://vallabhkulkarni.com';
 export const metadata: Metadata = {
   title: "Enterprise Projects & Case Studies | Vallabh Kulkarni",
   description:
-    "Enterprise backend integrations, Workato SDK connectors, high-volume data pipelines, and AI systems delivered by Vallabh Kulkarni.",
+    "Explore enterprise integration case studies, custom Workato SDK connectors, high-volume data pipelines, and AI systems engineered by Vallabh Kulkarni.",
   alternates: {
     canonical: `${siteUrl}/work`,
   },

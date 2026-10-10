@@ -5,7 +5,7 @@ const siteUrl = 'https://vallabhkulkarni.com';
 
 export const metadata: Metadata = {
   title: 'Resume & Technical Background | Vallabh Kulkarni',
-  description: 'Read and download the official resume of Vallabh Kulkarni, Associate Software Engineer at OneSolve. Highlighting enterprise achievements, skills, and education.',
+  description: 'Read and download the official resume of Vallabh Kulkarni, Associate Software Engineer at OneSolve. View technical skills, enterprise experience, and education.',
   alternates: {
     canonical: `${siteUrl}/resume`,
   },

@@ -5,7 +5,7 @@ const siteUrl = 'https://vallabhkulkarni.com';
 
 export const metadata: Metadata = {
   title: 'Custom SDK Architecture vs Traditional Options | Integration Comparison',
-  description: 'An technical comparison of custom Workato SDK connector architecture versus generic HTTP connectors and legacy consulting agencies.',
+  description: 'In-depth technical comparison evaluating custom Workato SDK connector architecture versus pre-built generic HTTP connectors and legacy agency retainers.',
   alternates: {
     canonical: `${siteUrl}/comparison`,
   },

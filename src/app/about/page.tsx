@@ -5,7 +5,7 @@ const siteUrl = 'https://vallabhkulkarni.com';
 
 export const metadata: Metadata = {
   title: 'About Vallabh Kulkarni | Software Engineering & Background',
-  description: "Learn about Vallabh Kulkarni's software engineering career at OneSolve, Workato certifications, background, and enterprise integration experience.",
+  description: "Discover Vallabh Kulkarni's software engineering background, career at OneSolve, Workato SDK experience, and technical leadership in enterprise integration.",
   alternates: {
     canonical: `${siteUrl}/about`,
   },

@@ -5,7 +5,7 @@ const siteUrl = 'https://vallabhkulkarni.com';
 
 export const metadata: Metadata = {
   title: 'Contact Vallabh Kulkarni | Software & Automation Engineering',
-  description: 'Get in touch with Vallabh Kulkarni for enterprise automation projects, custom SDK connector development, AI integrations, or technical inquiries.',
+  description: 'Get in touch with Vallabh Kulkarni for enterprise automation engineering, custom Workato SDK connector development, Gemini AI integration, or technical roles.',
   alternates: {
     canonical: `${siteUrl}/contact`,
   },

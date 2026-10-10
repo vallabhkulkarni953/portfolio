@@ -5,7 +5,7 @@ const siteUrl = 'https://vallabhkulkarni.com';
 
 export const metadata: Metadata = {
   title: 'Vallabh Kulkarni | Associate Software Engineer & AI Systems Architect',
-  description: 'Associate Software Engineer specializing in Enterprise Automation, AI Systems Architecture, Workato SDK Connectors, and Cloud Data Pipelines.',
+  description: 'Associate Software Engineer specializing in Enterprise Automation, AI Systems Architecture, Workato SDK Connectors, and scalable Cloud Data Pipelines.',
   keywords: [
     'Vallabh Kulkarni',
     'Software Engineer',
